@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d1514134bc4fbd41bb739b1b9a49231, type: 3}
+  m_Name: Trap_L
+  m_EditorClassIdentifier: 
+  m_DefaultSprite: {fileID: -40565093, guid: 46a554c375e572c44ad947292d26faf6, type: 3}
+  m_DefaultGameObject: {fileID: 7116339663992599394, guid: ed7de323885ca8d43b5519499f6c114f, type: 3}
+  m_DefaultColliderType: 1
+  m_TilingRules: []
