@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   color: {r: 0, g: 0, b: 0, a: 0}
-  moveDuration: 0.5
+  testPortalVec: {x: 0, y: 0, z: 0}
 --- !u!61 &-1523211217043142632
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -137,9 +137,9 @@ GameObject:
   m_Component:
   - component: {fileID: 8910199764955829464}
   - component: {fileID: 8910199764955829466}
-  - component: {fileID: 8910199764955829465}
   - component: {fileID: 8910199764955829468}
   - component: {fileID: 8910199764955829467}
+  - component: {fileID: 7375234772800427841}
   m_Layer: 0
   m_Name: Goal_paper
   m_TagString: Untagged
@@ -214,22 +214,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8910199764955829465
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8910199764955829463}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76435ddb2844ce64f93c7232e5bf8d4a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  hueSpeed: 200
-  currentHue: 0
-  paper: {fileID: 0}
-  rainbowColor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!198 &8910199764955829468
 ParticleSystem:
   m_ObjectHideFlags: 0
@@ -5009,3 +4993,19 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
+--- !u!114 &7375234772800427841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8910199764955829463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8694e7d9ae673c04c8b676e8dee24dc6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hueSpeed: 50
+  currentHue: 0
+  sprite: {fileID: 0}
+  rainbowColor: {r: 0, g: 0, b: 0, a: 0}
