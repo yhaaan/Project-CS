@@ -4,15 +4,8 @@ using UnityEngine;
 
 public class Stages : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    public void reStart(int N) 
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

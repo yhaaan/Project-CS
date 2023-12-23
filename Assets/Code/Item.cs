@@ -28,7 +28,7 @@ public class Item : MonoBehaviour
     {
         switch (transform.tag)
         {
-            case "testPortal":
+            
             case "Brush":
             case "Point":
             case "Paint":
@@ -48,6 +48,7 @@ public class Item : MonoBehaviour
                 }
                 break;
             case "Water":
+            case "testPortal":
                 break;
         }
         
@@ -63,20 +64,26 @@ public class Item : MonoBehaviour
 
             case "Brush":
                 GameManager.instance.player.MixColor(color);
-               //Destroy(gameObject);
+                gameObject.SetActive(false);
+                //Destroy(gameObject);
                 break;
             case "Paint":
                 GameManager.instance.player.ChangeColor(color);
+                gameObject.SetActive(false);
                 //Destroy(gameObject);
                 break;
             case "Water":
                 GameManager.instance.player.ChangeColor(color);
                 break;
             case "Point":
+                gameObject.SetActive(false);
                 //Destroy(gameObject);
                 break;
             case "Trap":
+                GameManager.instance.current_IM.resetItems();
+                GameManager.instance.player.ChangeColor(Color.white);
                 GameManager.instance.player.transform.position = new Vector3(0, 0, 0);
+                
                 break;
             case "Finish":
                 GameManager.instance.gameStart(0);
